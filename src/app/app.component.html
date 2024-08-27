@@ -228,7 +228,8 @@
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
       <p><a routerLink="first">first</a></p>
-      <p><a routerLink="second">second</a></p>
+      <p><a routerLink="second">second</a>
+      <p><a href="#" (click)="$event.preventDefault(); goToContact()">Contact Us</a> </p>
 
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>

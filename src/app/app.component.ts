@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {RouterLink, RouterOutlet} from '@angular/router';
+import {Router, RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,11 @@ import {RouterLink, RouterOutlet} from '@angular/router';
   styleUrl: './app.component.less'
 })
 export class AppComponent {
+  constructor(private router: Router) {
+  }
   title = 'router-app';
+
+  goToContact(){
+    this.router.navigate(['contact'])
+  }
 }
